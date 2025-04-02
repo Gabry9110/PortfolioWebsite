@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Sysadmin Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="./tailwind-catppuccin.js"></script>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-base text-text min-h-screen font-mono">
+    <!-- Terminal-style navbar -->
+    <nav class="bg-surface0 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-peach font-bold">$</span>
+                <span class="text-blue">gabry</span>
+                <span class="text-green">--portfolio</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-subtext1 hover:text-lavender transition">about</a>
+                <a href="#skills" class="text-subtext1 hover:text-lavender transition">skills</a>
+                <a href="#projects" class="text-subtext1 hover:text-lavender transition">projects</a>
+                <a href="#contact" class="text-subtext1 hover:text-lavender transition">contact</a>
+            </div>
+            <button class="md:hidden text-subtext1">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-mantle to-crust">
+        <div class="container mx-auto px-4 py-20 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 glow-text">
+                    <span class="text-peach">#!</span>
+                    <span class="text-blue">/home/</span>
+                    <span class="text-green">gabry</span>
+                </h1>
+                <div class="typewriter text-2xl md:text-3xl mb-8">
+                    <span class="text-green">$</span>
+                    <span class="text-peach"> whoami</span>
+                </div>
+                <div class="flex justify-center space-x-4">
+                    <a href="#contact" class="bg-mauve hover:bg-mauve/90 text-base px-6 py-3 rounded-lg font-bold transition">
+                        <i class="fas fa-terminal mr-2"></i> Contact Me
+                    </a>
+                    <a href="#projects" class="bg-surface0 hover:bg-surface1 text-subtext1 px-6 py-3 rounded-lg font-bold transition">
+                        <i class="fas fa-code mr-2"></i> View Projects
+                    </a>
+                </div>
+                <div class="mt-12 text-overlay1">
+                    <p class="mb-2">$ <a href="https://github.com/fastfetch-cli/fastfetch">fastfetch</a> --stdout</p>
+                    <div class="bg-surface0 p-4 rounded-lg text-left max-w-md mx-auto">
+                        <p><span class="text-peach">OS:</span> Arch Linux</p>
+                        <p><span class="text-peach">Kernel:</span> x86_64 Linux 6.14.0-arch</p>
+                        <p><span class="text-peach">DE:</span> KDE Plasma 6</p>
+                        <p><span class="text-peach">Terminal:</span> Konsole</p>
+                        <p><span class="text-peach">Shell:</span> zsh with oh-my-zsh</p>
+                        <p><span class="text-peach">Languages:</span> Python, Go, Bash</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-surface0">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                <span class="text-blue">about</span>
+                <span class="text-yellow">.</span>
+                <span class="text-green">txt</span>
+            </h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 rounded-full bg-gradient-to-br from-mauve to-blue p-1">
+                            <img src="./garby.jpg" alt="Profile" class="w-full h-full rounded-full object-cover border-4 border-base">
+                        </div>
+                        <div class="absolute -bottom-3 -right-3 bg-surface1 px-4 py-2 rounded-full">
+                            <span class="text-peach">:(){:|:&};:</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-2/3">
+                    <div class="bg-surface1 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-lavender">
+                            <span class="text-green">[</span>
+                            <span class="text-blue">gabry@portfolio</span>
+                            <span class="text-green">]</span>
+                            <span class="text-peach">$</span>
+                            <span class="text-yellow"> cat about.txt</span>
+                        </h3>
+                        <p class="mb-4 text-subtext1">
+                            I'm a passionate Linux system administrator and IT Specialist with over 5 years of experience managing production environments. I specialize in automation, infrastructure as code, and building resilient systems.
+                        </p>
+                        <p class="mb-4 text-subtext1">
+                            My journey began when I installed my first Linux distribution. Since then, I've developed a deep appreciation for well-architected, maintainable and open source infrastructure.
+                        </p>
+                        <div class="mt-6">
+                            <div class="flex items-center mb-2">
+                                <span class="w-32 text-peach">$ uptime</span>
+                                <span class="text-subtext0">18:02:14 up 42 days,  6:21,  1 user,  load average: 0.12, 0.09, 0.19</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-32 text-peach">$ echo $EDITOR</span>
+                                <span class="text-subtext0">/usr/bin/code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-mantle">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                <span class="text-peach">:</span>
+                <span class="text-blue">set</span>
+                <span class="text-yellow"> skill</span>
+                <span class="text-green">=</span>
+                <span class="text-mauve">(</span>
+                <span class="text-peach">sysadmin</span>
+                <span class="text-mauve">)</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Linux Card -->
+                <div class="bg-surface0 rounded-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue/20 flex items-center justify-center mr-4">
+                            <i class="fab fa-linux text-2xl text-blue"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-lavender">Linux Administration</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-4 h-4 rounded-full bg-green mr-2"></span>
+                            <span class="text-subtext1">Proxmox VE</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-4 h-4 rounded-full bg-green mr-2"></span>
+                            <span class="text-subtext1">Systemd & init systems</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-4 h-4 rounded-full bg-green mr-2"></span>
+                            <span class="text-subtext1">Performance tuning</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-4 h-4 rounded-full bg-green mr-2"></span>
+                            <span class="text-subtext1">Security hardening</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- DevOps Card -->
+                <div class="bg-surface0 rounded-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-teal/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-infinity text-2xl text-teal"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-lavender">DevOps & Cloud</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-4 h-4 rounded-full bg-green mr-2"></span>
+                            <span class="text-subtext1">Terraform & Ansible</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-4 h-4 rounded-full bg-green mr-2"></span>
+                            <span class="text-subtext1">AWS & GCP</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-4 h-4 rounded-full bg-green mr-2"></span>
+                            <span class="text-subtext1">Kubernetes & Docker</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-4 h-4 rounded-full bg-green mr-2"></span>
+                            <span class="text-subtext1">CI/CD Pipelines</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Development Card -->
+                <div class="bg-surface0 rounded-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-red/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-code text-2xl text-red"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-lavender">Development</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-4 h-4 rounded-full bg-green mr-2"></span>
+                            <span class="text-subtext1">Python (3+ years)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-4 h-4 rounded-full bg-green mr-2"></span>
+                            <span class="text-subtext1">Go (2+ years)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-4 h-4 rounded-full bg-green mr-2"></span>
+                            <span class="text-subtext1">Bash scripting</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-4 h-4 rounded-full bg-yellow mr-2"></span>
+                            <span class="text-subtext1">C & low-level (learning)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-surface0 rounded-lg p-6">
+                <h3 class="text-xl font-bold mb-4 text-lavender">
+                    <span class="text-blue">$</span> 
+                    <span class="text-peach">sysadmin</span> 
+                    <span class="text-green">--show-skills</span>
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Skill bars -->
+                    <div>
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-subtext1">Linux Administration</span>
+                                <span class="text-subtext0">90%</span>
+                            </div>
+                            <div class="w-full bg-surface2 rounded-full h-2.5">
+                                <div class="bg-blue h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-subtext1">Python</span>
+                                <span class="text-subtext0">85%</span>
+                            </div>
+                            <div class="w-full bg-surface2 rounded-full h-2.5">
+                                <div class="bg-teal h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-subtext1">Go</span>
+                                <span class="text-subtext0">75%</span>
+                            </div>
+                            <div class="w-full bg-surface2 rounded-full h-2.5">
+                                <div class="bg-peach h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-subtext1">Containerization</span>
+                                <span class="text-subtext0">88%</span>
+                            </div>
+                            <div class="w-full bg-surface2 rounded-full h-2.5">
+                                <div class="bg-mauve h-2.5 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-subtext1">Proxmox VE</span>
+                                <span class="text-subtext0">92%</span>
+                            </div>
+                            <div class="w-full bg-surface2 rounded-full h-2.5">
+                                <div class="bg-sapphire h-2.5 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-subtext1">Bash</span>
+                                <span class="text-subtext0">94%</span>
+                            </div>
+                            <div class="w-full bg-surface2 rounded-full h-2.5">
+                                <div class="bg-green h-2.5 rounded-full" style="width: 94%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-surface0">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                <span class="text-yellow">ls</span>
+                <span class="text-blue"> -la</span>
+                <span class="text-green"> ~/code-projects/</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-surface1 rounded-lg overflow-hidden shadow-lg card-hover">
+                    <div class="h-48 bg-gradient-to-r from-red to-yellow flex items-center justify-center">
+                        <i class="fas fa-gun text-6xl text-base"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-lavender">Russian Roulette Simulator</h3>
+                            <span class="bg-blue/20 text-mauve text-xs px-2 py-1 rounded">Various</span>
+                        </div>
+                        <p class="text-subtext1 mb-4">A Russian Roulette styled game that uses RNG, remade in various languages for personal reference.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-surface2 text-xs px-2 py-1 rounded">Multi-lang</span>
+                            <span class="bg-surface2 text-xs px-2 py-1 rounded">Practice</span>
+                            <span class="bg-surface2 text-xs px-2 py-1 rounded">Reference</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/Gabry9110/RussianRoulette" class="text-blue hover:text-blue/80">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-surface1 rounded-lg overflow-hidden shadow-lg card-hover">
+                    <div class="h-48 bg-gradient-to-r from-teal to-sapphire flex items-center justify-center">
+                        <i class="fas fa-network-wired text-6xl text-base"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-lavender">display_ip</h3>
+                            <span class="bg-yellow/20 text-yellow text-xs px-2 py-1 rounded">Python</span>
+                        </div>
+                        <p class="text-subtext1 mb-4">Python script that shows a Raspberry Pi's IP addresses on a I2C display and a REST API. Runs continuously using a Systemd service.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-surface2 text-xs px-2 py-1 rounded">Python</span>
+                            <span class="bg-surface2 text-xs px-2 py-1 rounded">Raspberry Pi</span>
+                            <span class="bg-surface2 text-xs px-2 py-1 rounded">Flask</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/Gabry9110/display_ip" class="text-blue hover:text-blue/80">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-surface1 rounded-lg overflow-hidden shadow-lg card-hover">
+                    <div class="h-48 bg-gradient-to-r from-mauve to-blue flex items-center justify-center">
+                        <i class="fab fa-discord text-6xl text-base"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-lavender">EchoBot</h3>
+                            <span class="bg-yellow/20 text-yellow text-xs px-2 py-1 rounded">Python</span>
+                        </div>
+                        <p class="text-subtext1 mb-4">Proof of concept chatbot for Discord, with multiple functionalities for math, pseudorandom generation, fun and IT.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-surface2 text-xs px-2 py-1 rounded">Python</span>
+                            <span class="bg-surface2 text-xs px-2 py-1 rounded">Discord</span>
+                            <span class="bg-surface2 text-xs px-2 py-1 rounded">Automation</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/Gabry9110/EchoBot" class="text-blue hover:text-blue/80">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="https://github.com/Gabry9110?tab=repositories" class="inline-flex items-center bg-surface1 hover:bg-surface2 text-subtext1 px-6 py-3 rounded-lg font-bold transition">
+                    <i class="fab fa-github mr-2"></i> View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-mantle">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                <span class="text-peach">echo</span>
+                <span class="text-yellow"> $CONTACT_INFO</span>
+                <span class="text-green"> ></span>
+                <span class="text-blue"> contact.txt</span>
+            </h2>
+
+            <div class="max-w-3xl mx-auto bg-surface0 rounded-lg p-8 shadow-lg">
+                <form class="space-y-6" action="mailto:gabry@gabry.moe">
+                    <div>
+                        <label for="name" class="block text-subtext1 mb-2">$ NAME="</label>
+                        <input type="text" id="name" class="w-full bg-surface1 border border-surface2 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue focus:border-transparent text-subtext1" placeholder="Your Name">
+                        <span class="text-subtext1">"</span>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-subtext1 mb-2">$ EMAIL="</label>
+                        <input type="email" id="email" class="w-full bg-surface1 border border-surface2 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue focus:border-transparent text-subtext1" placeholder="your@email.com">
+                        <span class="text-subtext1">"</span>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-subtext1 mb-2">$ SUBJECT="</label>
+                        <input type="text" id="subject" class="w-full bg-surface1 border border-surface2 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue focus:border-transparent text-subtext1" placeholder="Subject">
+                        <span class="text-subtext1">"</span>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-subtext1 mb-2">$ MESSAGE=EOF</label>
+                        <textarea id="message" rows="5" class="w-full bg-surface1 border border-surface2 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue focus:border-transparent text-subtext1" placeholder="Your message here..."></textarea>
+                        <span class="text-subtext1">EOF</span>
+                    </div>
+                    <div class="pt-2">
+                        <button type="submit" class="w-full bg-blue hover:bg-blue/90 text-base font-bold py-3 px-4 rounded-lg transition flex items-center justify-center">
+                            <i class="fas fa-paper-plane mr-2"></i> ./send_message.sh
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="mt-12 pt-8 border-t border-surface2">
+                    <h3 class="text-xl font-bold mb-6 text-center text-lavender">
+                        <span class="text-blue">||</span> 
+                        <span class="text-peach">Connect</span> 
+                        <span class="text-blue">||</span>
+                    </h3>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://github.com/Gabry9110" class="w-12 h-12 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-xl text-subtext1 hover:text-blue transition">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://bsky.app/profile/gabry.moe" class="w-12 h-12 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-xl text-subtext1 hover:text-sapphire transition">
+                            <i class="fab fa-bluesky"></i>
+                        </a>
+                        <a href="https://www.instagram.com/gabry91100/" class="w-12 h-12 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-xl text-subtext1 hover:text-red transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://t.me/Gabry9110" class="w-12 h-12 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-xl text-subtext1 hover:text-mauve transition">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="mailto:gabry@gabry.moe" class="w-12 h-12 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-xl text-subtext1 hover:text-peach transition">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-crust py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <span class="text-peach font-bold mr-2">$</span>
+                        <span class="text-blue">sysadmin&nbsp;</span>
+                        <span class="text-green">--exit</span>
+                    </div>
+                    <p class="text-overlay1 text-sm mt-1">v1.0.0 - Compiled with gcc on Arch Linux</p>
+                </div>
+                <div class="text-overlay1 text-sm">
+                    <p>© 2025 Gabry, <a href="https://en.wikipedia.org/wiki/MIT_License">Some</a> rights reserved.</p>
+                    <p class="mt-1">Powered by <i class="fas fa-coffee text-peach"></i> and <i class="fas fa-heart text-red"></i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./hero.js"></script>
+</body>
+</html>
