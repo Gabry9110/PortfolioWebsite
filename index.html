@@ -23,7 +23,7 @@
                 <a href="#about" class="text-subtext1 hover:text-lavender transition">about</a>
                 <a href="#skills" class="text-subtext1 hover:text-lavender transition">skills</a>
                 <a href="#projects" class="text-subtext1 hover:text-lavender transition">projects</a>
-                <a href="#contact" class="text-subtext1 hover:text-lavender transition">contact</a>
+                <a href="#social" class="text-subtext1 hover:text-lavender transition">social</a>
             </div>
             <button class="md:hidden text-subtext1">
                 <i class="fas fa-bars text-xl"></i>
@@ -45,8 +45,8 @@
                     <span class="text-peach"> whoami</span>
                 </div>
                 <div class="flex justify-center space-x-4">
-                    <a href="#contact" class="bg-mauve hover:bg-mauve/90 text-base px-6 py-3 rounded-lg font-bold transition">
-                        <i class="fas fa-terminal mr-2"></i> Contact Me
+                    <a href="#social" class="bg-mauve hover:bg-mauve/90 text-base px-6 py-3 rounded-lg font-bold transition">
+                        <i class="fas fa-share-alt mr-2"></i> Social Links
                     </a>
                     <a href="#projects" class="bg-surface0 hover:bg-surface1 text-subtext1 px-6 py-3 rounded-lg font-bold transition">
                         <i class="fas fa-code mr-2"></i> View Projects
@@ -60,7 +60,7 @@
                         <p><span class="text-peach">DE:</span> KDE Plasma 6</p>
                         <p><span class="text-peach">Terminal:</span> Konsole</p>
                         <p><span class="text-peach">Shell:</span> zsh with oh-my-zsh</p>
-                        <p><span class="text-peach">Languages:</span> Python, Go, Bash</p>
+                        <p><span class="text-peach">Languages:</span> Python, Go, Bash, C</p>
                     </div>
                 </div>
             </div>
@@ -326,21 +326,21 @@
                 <!-- Project 2 -->
                 <div class="bg-surface1 rounded-lg overflow-hidden shadow-lg card-hover">
                     <div class="h-48 bg-gradient-to-r from-teal to-sapphire flex items-center justify-center">
-                        <i class="fas fa-network-wired text-6xl text-base"></i>
+                        <i class="fas fa-server text-6xl text-base"></i>
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-lavender">display_ip</h3>
-                            <span class="bg-yellow/20 text-yellow text-xs px-2 py-1 rounded">Python</span>
+                            <h3 class="text-xl font-bold text-lavender">MCServerAPI</h3>
+                            <span class="bg-sapphire/20 text-blue text-xs px-2 py-1 rounded">Go</span>
                         </div>
-                        <p class="text-subtext1 mb-4">Python script that shows a Raspberry Pi's IP addresses on a I2C display and a REST API. Runs continuously using a Systemd service.</p>
+                        <p class="text-subtext1 mb-4">Go API to start a Minecraft Server running under a systemd service. Also shuts down the server automatically if no one is playing.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-surface2 text-xs px-2 py-1 rounded">Python</span>
-                            <span class="bg-surface2 text-xs px-2 py-1 rounded">Raspberry Pi</span>
-                            <span class="bg-surface2 text-xs px-2 py-1 rounded">Flask</span>
+                            <span class="bg-surface2 text-xs px-2 py-1 rounded">Go</span>
+                            <span class="bg-surface2 text-xs px-2 py-1 rounded">Gin</span>
+                            <span class="bg-surface2 text-xs px-2 py-1 rounded">systemd</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="https://github.com/Gabry9110/display_ip" class="text-blue hover:text-blue/80">
+                            <a href="https://github.com/Gabry9110/MCServerAPI" class="text-blue hover:text-blue/80">
                                 <i class="fab fa-github"></i> Code
                             </a>
                         </div>
@@ -381,68 +381,41 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-mantle">
+    <!-- Social Section -->
+    <section id="social" class="py-20 bg-mantle">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
                 <span class="text-peach">echo</span>
-                <span class="text-yellow"> $CONTACT_INFO</span>
+                <span class="text-yellow"> $SOCIAL_LINKS</span>
                 <span class="text-green"> ></span>
-                <span class="text-blue"> contact.txt</span>
+                <span class="text-blue"> social.txt</span>
             </h2>
 
-            <div class="max-w-3xl mx-auto bg-surface0 rounded-lg p-8 shadow-lg">
-                <form class="space-y-6" action="mailto:gabry@gabry.moe">
-                    <div>
-                        <label for="name" class="block text-subtext1 mb-2">$ NAME="</label>
-                        <input type="text" id="name" class="w-full bg-surface1 border border-surface2 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue focus:border-transparent text-subtext1" placeholder="Your Name">
-                        <span class="text-subtext1">"</span>
-                    </div>
-                    <div>
-                        <label for="email" class="block text-subtext1 mb-2">$ EMAIL="</label>
-                        <input type="email" id="email" class="w-full bg-surface1 border border-surface2 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue focus:border-transparent text-subtext1" placeholder="your@email.com">
-                        <span class="text-subtext1">"</span>
-                    </div>
-                    <div>
-                        <label for="subject" class="block text-subtext1 mb-2">$ SUBJECT="</label>
-                        <input type="text" id="subject" class="w-full bg-surface1 border border-surface2 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue focus:border-transparent text-subtext1" placeholder="Subject">
-                        <span class="text-subtext1">"</span>
-                    </div>
-                    <div>
-                        <label for="message" class="block text-subtext1 mb-2">$ MESSAGE=EOF</label>
-                        <textarea id="message" rows="5" class="w-full bg-surface1 border border-surface2 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue focus:border-transparent text-subtext1" placeholder="Your message here..."></textarea>
-                        <span class="text-subtext1">EOF</span>
-                    </div>
-                    <div class="pt-2">
-                        <button type="submit" class="w-full bg-blue hover:bg-blue/90 text-base font-bold py-3 px-4 rounded-lg transition flex items-center justify-center">
-                            <i class="fas fa-paper-plane mr-2"></i> ./send_message.sh
-                        </button>
-                    </div>
-                </form>
-                
-                <div class="mt-12 pt-8 border-t border-surface2">
-                    <h3 class="text-xl font-bold mb-6 text-center text-lavender">
-                        <span class="text-blue">||</span> 
-                        <span class="text-peach">Connect</span> 
-                        <span class="text-blue">||</span>
-                    </h3>
-                    <div class="flex justify-center space-x-6">
-                        <a href="https://github.com/Gabry9110" class="w-12 h-12 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-xl text-subtext1 hover:text-blue transition">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://bsky.app/profile/gabry.moe" class="w-12 h-12 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-xl text-subtext1 hover:text-sapphire transition">
-                            <i class="fab fa-bluesky"></i>
-                        </a>
-                        <a href="https://www.instagram.com/gabry91100/" class="w-12 h-12 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-xl text-subtext1 hover:text-red transition">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://t.me/Gabry9110" class="w-12 h-12 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-xl text-subtext1 hover:text-mauve transition">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                        <a href="mailto:gabry@gabry.moe" class="w-12 h-12 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-xl text-subtext1 hover:text-peach transition">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
+            <div class="max-w-3xl mx-auto bg-surface0 rounded-lg p-8 shadow-lg text-center">
+                <h3 class="text-xl font-bold mb-6 text-lavender">
+                    <span class="text-blue">||</span> 
+                    <span class="text-peach">Connect</span> 
+                    <span class="text-blue">||</span>
+                </h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://github.com/Gabry9110" class="w-16 h-16 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-2xl text-subtext1 hover:text-blue transition">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://bsky.app/profile/gabry.moe" class="w-16 h-16 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-2xl text-subtext1 hover:text-sapphire transition">
+                        <i class="fab fa-bluesky"></i>
+                    </a>
+                    <a href="https://mastodon.uno/@gabry9110" class="w-16 h-16 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-2xl text-subtext1 hover:text-mauve transition">
+                        <i class="fab fa-mastodon"></i>
+                    </a>
+                    <a href="https://www.instagram.com/gabry91100/" class="w-16 h-16 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-2xl text-subtext1 hover:text-red transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://t.me/Gabry9110" class="w-16 h-16 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-2xl text-subtext1 hover:text-mauve transition">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="mailto:gabry@gabry.moe" class="w-16 h-16 rounded-full bg-surface1 hover:bg-surface2 flex items-center justify-center text-2xl text-subtext1 hover:text-peach transition">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -455,10 +428,10 @@
                 <div class="mb-4 md:mb-0">
                     <div class="flex items-center">
                         <span class="text-peach font-bold mr-2">$</span>
-                        <span class="text-blue">sysadmin&nbsp;</span>
+                        <span class="text-blue">gabry&nbsp;</span>
                         <span class="text-green">--exit</span>
                     </div>
-                    <p class="text-overlay1 text-sm mt-1">v1.0.0 - Compiled with gcc on Arch Linux</p>
+                    <p class="text-overlay1 text-sm mt-1">v1.0.1 - Compiled with gcc on Arch Linux</p>
                 </div>
                 <div class="text-overlay1 text-sm">
                     <p>© 2025 Gabry, <a href="https://en.wikipedia.org/wiki/MIT_License">Some</a> rights reserved.</p>
